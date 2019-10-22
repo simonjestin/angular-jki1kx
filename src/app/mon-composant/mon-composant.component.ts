@@ -24,4 +24,14 @@ youtubers = [
   ngOnInit() {
   }
 
+  like(id) 
+  {
+    for(let youtuber of this.youtubers)
+    {
+      if (youtuber.id == id)
+      {
+        console.log(youtuber.name + ' liker !');
+      }
+    }
+  }
 }
