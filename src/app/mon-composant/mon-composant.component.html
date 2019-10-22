@@ -6,6 +6,7 @@
         <p class="card-text">{{youtuber.followers}}</p>
         <p class="card-text">{{youtuber.description}}</p>
         <button (click)="like(youtuber.id)">Like</button>
+        <button (click)="notify.emit(youtuber.name)">Notify me</button>
       </div>
     </div>
   </div>

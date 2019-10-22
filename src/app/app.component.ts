@@ -12,4 +12,9 @@ export class AppComponent  {
   { 
     return param + ' est le meilleur Youtuber !'
   }
+
+  onNotify() 
+  {
+    console.log('Youtuber liker !');
+  }
 }
