@@ -13,11 +13,17 @@ export class YoutubersService {
   { id: 8, name: 'Les Marioles Trotters', followers: 54000, description: 'Traverse l\'Afrique avec nous ! Depuis 1 an, nous vivons à bord de notre petit van 4x4, nommé Léon.' },
   { id: 9, name: 'Le Règlement', followers: 712000, description: 'Ceux qui respectent le règlement ne le respectent pas correctement.' },
 ];
+toto = 0;
 
   constructor() { }
 
   GetYoutubers()
   {
     return this.youtubers;
+  }
+
+  SetYoutuber(name, followers, description)
+  {
+    this.youtubers.push({id:0, name: name, followers:followers, description:description});
   }
 }
